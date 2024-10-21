@@ -1,0 +1,27 @@
+
+
+
+.container::before {
+    content: "";
+    position: relative;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: url("images/beiginning wallpaper.png") no-repeat center center;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -2;}
+
+    .container::after {
+        content: "";
+        position: relative;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.9) 100%);
+        z-index: 1;
+        pointer-events: none;
+    }
